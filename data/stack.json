@@ -1,0 +1,294 @@
+[
+  {
+    "name": "MERN",
+    "displayName": "MERN Stack",
+    "languages": ["javascript", "typescript"],
+    "tags": ["javascript", "node", "react", "mongodb", "nosql", "spa", "fullstack"],
+    "scalability": "high",
+    "cost": "low",
+    "bestFor": ["web-app", "real-time", "api"],
+    "strengths": [
+      "Single language across the entire stack (JS/TS)",
+      "Huge ecosystem and community",
+      "Fast prototyping with flexible schema (MongoDB)",
+      "Excellent real-time support via Socket.io or WebSockets"
+    ],
+    "weaknesses": [
+      "MongoDB not ideal for complex relational data",
+      "Callback/async complexity at scale",
+      "No built-in opinionated structure"
+    ],
+    "components": {
+      "frontend": "React",
+      "backend": "Express.js / Node.js",
+      "database": "MongoDB",
+      "runtime": "Node.js"
+    },
+    "resources": {
+      "docs": "https://www.mongodb.com/mern-stack",
+      "github": "https://github.com/mongodb/mongo"
+    }
+  },
+  {
+    "name": "T3",
+    "displayName": "T3 Stack",
+    "languages": ["typescript"],
+    "tags": ["typescript", "nextjs", "trpc", "prisma", "postgres", "fullstack", "typesafe"],
+    "scalability": "high",
+    "cost": "low",
+    "bestFor": ["web-app", "api", "e-commerce"],
+    "strengths": [
+      "End-to-end type safety with tRPC",
+      "Prisma ORM with schema migrations",
+      "Next.js for SSR/SSG/ISR out of the box",
+      "Excellent DX with TypeScript throughout"
+    ],
+    "weaknesses": [
+      "Steep learning curve for beginners",
+      "tRPC is not REST — harder to expose public APIs",
+      "Opinionated — less flexible for non-standard architectures"
+    ],
+    "components": {
+      "frontend": "Next.js + React",
+      "backend": "tRPC + Next.js API routes",
+      "database": "PostgreSQL via Prisma"
+    },
+    "resources": {
+      "docs": "https://create.t3.gg",
+      "github": "https://github.com/t3-oss/create-t3-app"
+    }
+  },
+  {
+    "name": "MEAN",
+    "displayName": "MEAN Stack",
+    "languages": ["javascript", "typescript"],
+    "tags": ["javascript", "angular", "node", "mongodb", "enterprise", "spa"],
+    "scalability": "high",
+    "cost": "low",
+    "bestFor": ["web-app", "api", "microservices"],
+    "strengths": [
+      "Angular's opinionated structure suits enterprise teams",
+      "Dependency injection and module system built-in",
+      "Strong TypeScript support in Angular",
+      "Good for large teams needing conventions"
+    ],
+    "weaknesses": [
+      "Angular has a steep learning curve",
+      "More verbose than React/Vue alternatives",
+      "Bundle sizes can be large"
+    ],
+    "components": {
+      "frontend": "Angular",
+      "backend": "Express.js / Node.js",
+      "database": "MongoDB",
+      "runtime": "Node.js"
+    },
+    "resources": {
+      "docs": "https://angular.io/docs",
+      "github": "https://github.com/angular/angular"
+    }
+  },
+  {
+    "name": "DJANGO_REACT",
+    "displayName": "Django + React",
+    "languages": ["python", "javascript", "typescript"],
+    "tags": ["python", "django", "react", "postgres", "rest", "batteries-included"],
+    "scalability": "medium",
+    "cost": "low",
+    "bestFor": ["web-app", "api", "cms", "data-pipeline"],
+    "strengths": [
+      "Django's batteries-included approach (auth, admin, ORM)",
+      "Python ecosystem for data science and ML integration",
+      "DRF (Django REST Framework) for robust API design",
+      "Mature and battle-tested"
+    ],
+    "weaknesses": [
+      "Two separate languages require context switching",
+      "Slower request throughput vs Node.js for I/O-heavy tasks",
+      "Django ORM can be limiting for complex queries"
+    ],
+    "components": {
+      "frontend": "React",
+      "backend": "Django + Django REST Framework",
+      "database": "PostgreSQL"
+    },
+    "resources": {
+      "docs": "https://docs.djangoproject.com",
+      "github": "https://github.com/django/django"
+    }
+  },
+  {
+    "name": "RAILS_HOTWIRE",
+    "displayName": "Ruby on Rails + Hotwire",
+    "languages": ["ruby"],
+    "tags": ["ruby", "rails", "hotwire", "postgres", "monolith", "rapid-development"],
+    "scalability": "medium",
+    "cost": "low",
+    "bestFor": ["web-app", "e-commerce", "cms"],
+    "strengths": [
+      "Fastest time-to-market for CRUD applications",
+      "Convention over configuration reduces boilerplate",
+      "Hotwire enables reactive UIs without heavy JS framework",
+      "Active Record ORM is intuitive and powerful"
+    ],
+    "weaknesses": [
+      "Ruby is slower than Go/Node for CPU-heavy tasks",
+      "Scaling Rails requires careful tuning",
+      "Smaller talent pool than JavaScript"
+    ],
+    "components": {
+      "frontend": "Hotwire (Turbo + Stimulus)",
+      "backend": "Ruby on Rails",
+      "database": "PostgreSQL"
+    },
+    "resources": {
+      "docs": "https://guides.rubyonrails.org",
+      "github": "https://github.com/rails/rails"
+    }
+  },
+  {
+    "name": "GO_POSTGRES",
+    "displayName": "Go + PostgreSQL",
+    "languages": ["go"],
+    "tags": ["go", "golang", "postgres", "high-performance", "microservices", "api"],
+    "scalability": "high",
+    "cost": "low",
+    "bestFor": ["api", "microservices", "real-time", "data-pipeline"],
+    "strengths": [
+      "Exceptional throughput and low memory footprint",
+      "Built-in concurrency with goroutines",
+      "Static binaries — simple deployment",
+      "Strong standard library"
+    ],
+    "weaknesses": [
+      "Verbose error handling",
+      "No generics until Go 1.18 — ecosystem catching up",
+      "Smaller pool of frontend-capable Go developers"
+    ],
+    "components": {
+      "backend": "Go (net/http, Gin, or Echo)",
+      "database": "PostgreSQL"
+    },
+    "resources": {
+      "docs": "https://go.dev/doc",
+      "github": "https://github.com/golang/go"
+    }
+  },
+  {
+    "name": "SPRING_BOOT",
+    "displayName": "Spring Boot + React",
+    "languages": ["java", "javascript", "typescript"],
+    "tags": ["java", "spring", "enterprise", "microservices", "react", "postgres"],
+    "scalability": "high",
+    "cost": "medium",
+    "bestFor": ["api", "microservices", "e-commerce"],
+    "strengths": [
+      "Industry standard for Java enterprise applications",
+      "Mature ecosystem with Spring Security, Spring Data",
+      "Excellent microservices support with Spring Cloud",
+      "Strong typing and IDE tooling in Java"
+    ],
+    "weaknesses": [
+      "Verbose configuration and boilerplate",
+      "Slow startup time (improving with GraalVM native image)",
+      "Higher resource usage vs Node.js or Go",
+      "Steep learning curve for non-Java developers"
+    ],
+    "components": {
+      "frontend": "React",
+      "backend": "Spring Boot (Java)",
+      "database": "PostgreSQL / MySQL"
+    },
+    "resources": {
+      "docs": "https://spring.io/projects/spring-boot",
+      "github": "https://github.com/spring-projects/spring-boot"
+    }
+  },
+  {
+    "name": "LARAVEL_VUE",
+    "displayName": "Laravel + Vue (Inertia)",
+    "languages": ["php", "javascript", "typescript"],
+    "tags": ["php", "laravel", "vue", "inertia", "postgres", "fullstack", "rapid-development"],
+    "scalability": "medium",
+    "cost": "low",
+    "bestFor": ["web-app", "e-commerce", "cms"],
+    "strengths": [
+      "Inertia.js enables SPA-like UX without separate API layer",
+      "Laravel's elegant ORM (Eloquent) and migration system",
+      "Rich ecosystem: Cashier (billing), Sanctum (auth), Horizon (queues)",
+      "Cheap shared hosting options for PHP"
+    ],
+    "weaknesses": [
+      "PHP has a mixed reputation in some developer communities",
+      "Performance ceiling lower than Go or Node.js",
+      "Inertia tightly couples frontend/backend"
+    ],
+    "components": {
+      "frontend": "Vue 3 + Inertia.js",
+      "backend": "Laravel (PHP)",
+      "database": "PostgreSQL / MySQL"
+    },
+    "resources": {
+      "docs": "https://laravel.com/docs",
+      "github": "https://github.com/laravel/laravel"
+    }
+  },
+  {
+    "name": "NEXT_SUPABASE",
+    "displayName": "Next.js + Supabase",
+    "languages": ["typescript", "javascript"],
+    "tags": ["nextjs", "supabase", "postgres", "serverless", "realtime", "saas", "typescript"],
+    "scalability": "high",
+    "cost": "low",
+    "bestFor": ["web-app", "real-time", "api", "e-commerce"],
+    "strengths": [
+      "Supabase provides instant auth, storage, and realtime out of the box",
+      "Postgres under the hood — no vendor lock-in on the database",
+      "Next.js App Router with Server Components for performance",
+      "Generous free tier — ideal for startups and MVPs"
+    ],
+    "weaknesses": [
+      "Supabase can be a single point of failure if self-hosting is not planned",
+      "Row-Level Security (RLS) requires learning curve",
+      "Cold starts on serverless functions"
+    ],
+    "components": {
+      "frontend": "Next.js (React)",
+      "backend": "Next.js API routes + Supabase Edge Functions",
+      "database": "PostgreSQL via Supabase"
+    },
+    "resources": {
+      "docs": "https://supabase.com/docs",
+      "github": "https://github.com/supabase/supabase"
+    }
+  },
+  {
+    "name": "FASTAPI_REACT",
+    "displayName": "FastAPI + React",
+    "languages": ["python", "javascript", "typescript"],
+    "tags": ["python", "fastapi", "react", "postgres", "async", "ml", "api"],
+    "scalability": "high",
+    "cost": "low",
+    "bestFor": ["api", "data-pipeline", "web-app", "real-time"],
+    "strengths": [
+      "Async-first with Python's asyncio for high concurrency",
+      "Auto-generated OpenAPI docs (Swagger UI)",
+      "Native Pydantic validation — type-safe Python",
+      "Excellent for ML model serving alongside web APIs"
+    ],
+    "weaknesses": [
+      "Python GIL limits true parallelism for CPU tasks",
+      "Younger ecosystem than Django",
+      "Requires an ASGI server (Uvicorn/Gunicorn) setup"
+    ],
+    "components": {
+      "frontend": "React",
+      "backend": "FastAPI (Python)",
+      "database": "PostgreSQL via SQLAlchemy / Tortoise ORM"
+    },
+    "resources": {
+      "docs": "https://fastapi.tiangolo.com",
+      "github": "https://github.com/tiangolo/fastapi"
+    }
+  }
+]
